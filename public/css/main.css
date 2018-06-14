@@ -1,0 +1,41 @@
+body#main {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+html {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+div.contents {
+  position: absolute;
+  top: 60px;
+  height: 600px;
+  overflow-y: scroll;
+}
+div.headres {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+  max-width: 800px;
+  z-index: 1000;
+  opacity: 0.9;
+}
+img.profile {
+  max-width: 400px;
+  height: auto;
+}
+div.contents {
+  text-align: center;
+}
+ul.list {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: initial;
+}
+dl.profile-dl {
+  margin: 0px;
+  display: flex;
+}

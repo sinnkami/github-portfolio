@@ -2,9 +2,149 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>テスト</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>portfolio</title>
   </head>
-  <body>
-    <p>ユーザーページを作成中です。</p>
+  <body id="main">
+    <div class="headres">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">ポートフォリオ</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#profile">プロフィール</a></li>
+              <li><a href="#language">よく使う言語</a></li>
+              <li><a href="#production">制作物</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="contents">
+      <div id="profile">
+        <h3>プロフィール</h3>
+        <img src="./public/images/profile.jpg" class="img-responsive center-block profile" alt="profile image">
+        <ul class="list-group list">
+          <li class="list-group-item">
+            <dl class="profile-dl">
+              <dt>名前&emsp;&#058;&emsp;</dt>
+              <dd>新神(sinnkami)</dd>
+            </dl>
+          </li>
+          <li class="list-group-item">
+            <dl class="profile-dl">
+              <dt>職業&emsp;&#058;&emsp;</dt>
+              <dd>モバイルエンジニア・SEエンジニア</dd>
+            </dl>
+          </li>
+          <li class="list-group-item">
+            <dl class="profile-dl">
+              <dt>メール&emsp;&#058;&emsp;</dt>
+              <dd><a href="mailto:sinnkami.mail@gmail.com">sinnkami.mail@gmail.com</a></dd>
+            </dl>
+          </li>
+          <li class="list-group-item">
+            <dl class="profile-dl">
+              <dt>twitter&emsp;&#058;&emsp;</dt>
+              <dd><a href="https://twitter.com/sinnkami_">@sinnkami_</a></dd>
+            </dl>
+          </li>
+          <li class="list-group-item">
+            <dl class="profile-dl">
+              <dt>github&emsp;&#058;&emsp;</dt>
+              <dd><a href="https://github.com/sinnkami">sinnkami</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      <div id="language">
+        <h3>よく使う言語</h3>
+        <ul class="list-group list">
+          <li class="list-group-item">JavaScript</li>
+          <li class="list-group-item">Ruby</li>
+          <li class="list-group-item">PHP</li>
+          <li class="list-group-item">Java</li>
+          <li class="list-group-item">ShellScript</li>
+          <li class="list-group-item">C#</li>
+        </ul>
+      </div>
+      <div id="production">
+        <h3>制作物</h3>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="./public/images/web-site.png" class="img-responsive center-block" alt="">
+          </div>
+          <div class="panel-body">
+            <h4>ウェブサイト</h4>
+            <p>vpsを借り、centosを使用した初期からのサーバー構築を行いました</p>
+            <p>現在はブログを制作し、公開しています</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="./public/images/server-bot.png" class="img-responsive center-block" alt="">
+          </div>
+          <div class="panel-body">
+            <h4>サーバー監視bot</h4>
+            <p>ウェブサイトのアクセス状況や、sshログインされた場合の通知をしています</p>
+            <p>slackと連携しており、通知はslackを通して来るように設定してあります</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="./public/images/rougelike.png" class="img-responsive center-block" alt="">
+          </div>
+          <div class="panel-body">
+            <h4>ローグライク</h4>
+            <p>単純な作りで作られていて、クリアは無いゲームです</p>
+            <p>どこまで地下深くまで潜っていけるか競い合うことのできるものになっています</p>
+            <p>herokuにて公開中 <a href="http://rougelike.herokuapp.com/">こちら</a> からどうぞ</p>
+            <p>ソースコードは <a href="https://github.com/sinnkami/RougeLike">こちら</a> からどうぞ</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <p style="height: 300px;">画像はありません</p>
+          </div>
+          <div class="panel-body">
+            <h4>東方SRPG(仮)</h4>
+            <p>electronを使用しクロスプラットフォームの東方二次創作SRPGゲームです</p>
+            <p>現在製作中 乞うご期待</p>
+            <p>ソースコードは <a href="https://github.com/sinnkami/touhou_SRPG">こちら</a> からどうぞ</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="./public/images/electron-twitter.jpg" class="img-responsive center-block" alt="">
+          </div>
+          <div class="panel-body">
+            <h4>electron twitter(仮)</h4>
+            <p>electronを使用しクロスプラットフォームのtwitterクライアントです</p>
+            <p>タイムラインの取得や、user streamを使用したタグ検索があります</p>
+            <p>現在はtwitter RSET API が廃止予定なので進行していません</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
