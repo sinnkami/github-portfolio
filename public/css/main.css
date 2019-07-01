@@ -39,3 +39,8 @@ dl.profile-dl {
   margin: 0px;
   display: flex;
 }
+
+.row.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
