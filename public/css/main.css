@@ -40,7 +40,7 @@ dl.profile-dl {
   display: flex;
 }
 
-.row.row-eq-height {
+.row-eq-height {
   display: flex;
   flex-wrap: wrap;
 }
